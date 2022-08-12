@@ -1,0 +1,32 @@
+@mixin flexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bg-transparent {
+	background-color: transparent;
+}
+
+.hidden {
+	display: none;
+}
+
+.scaleY-0 {
+	transform: scaleY(0);
+}
+
+.center-text {
+	text-align: center;
+}
+
+.reset-anchor {
+	color: inherit;
+	text-decoration: none;
+}
+
+.reset-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}

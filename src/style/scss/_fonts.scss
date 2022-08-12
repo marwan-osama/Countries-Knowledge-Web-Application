@@ -1,0 +1,50 @@
+.fs-xxs {
+	font-size: 9px;
+}
+.fs-xs {
+	font-size: 12px;
+}
+.fs-s {
+	font-size: 14px;
+}
+.fs-m {
+	font-size: 16px;
+}
+.fs-l {
+	font-size: 18px;
+}
+.fs-xl {
+	font-size: 21px;
+}
+.fs-2xl {
+	font-size: 24px;
+}
+.fs-3xl {
+	font-size: 27px;
+}
+
+.fs-res-xs {
+	font-size: calc(9px + 0.1vw);
+}
+.fs-res-s {
+	font-size: calc(12px + 0.15vw);
+}
+.fs-res-m {
+	font-size: calc(15px + 0.2vw);
+}
+.fs-res-l {
+	font-size: calc(18px + 0.25vw);
+}
+.fs-res-xl {
+	font-size: calc(21px + 0.3vw);
+}
+
+.fw-s {
+	font-weight: 300;
+}
+.fw-m {
+	font-weight: 600;
+}
+.fw-l {
+	font-weight: 800;
+}

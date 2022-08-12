@@ -1,0 +1,32 @@
+$colors: (
+	"blue": hsl(209, 23%, 22%),
+	"d-blue": hsl(207, 26%, 17%),
+	"vd-blue": hsl(200, 15%, 8%),
+	"d-gray": hsl(0, 0%, 52%),
+	"vl-gray": hsl(0, 0%, 98%),
+	"white": hsl(0, 0%, 100%),
+);
+
+@each $color, $value in $colors {
+	.clr-#{$color} {
+		color: $value !important;
+	}
+	.bg-#{$color} {
+		background-color: $value !important;
+	}
+	.ph-#{$color} {
+		&::placeholder {
+			color: $value;
+		}
+	}
+	.hvr-clr-#{$color} {
+		&:hover {
+			color: $value;
+		}
+	}
+	.hvr-bg-#{$color} {
+		&:hover {
+			background-color: $value;
+		}
+	}
+}

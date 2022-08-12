@@ -1,0 +1,10 @@
+nav {
+	box-shadow: 0 -8px 8px 3px black;
+}
+
+.nav-inner-wrapper {
+	@include flexCenter;
+	justify-content: space-between;
+	width: min(90%, 1200px);
+	margin: auto;
+}
