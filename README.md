@@ -6,7 +6,7 @@ LIVE VERSION OF THE WEBSITE [HERE](https://whereintheworld-fem.netlify.app)
 
 This project is a submission for front-end mentor's challenge [here](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca)
 
-This Web Application is based on [REST Countries API](https://restcountries.com/)
+This Web Application was built using React.js, SCSS, HTML5. powered by [REST Countries API](https://restcountries.com/)
 
 ## Setup
 
