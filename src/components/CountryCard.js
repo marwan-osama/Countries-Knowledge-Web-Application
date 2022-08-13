@@ -11,7 +11,10 @@ const CountryCard = ({ country }) => {
 				lightMode ? "clr-vd-blue bg-white" : "clr-vl-gray bg-blue"
 			}`}
 		>
-			<Link to={`/details/${country.name.official}`}>
+			<Link
+				to={`/details/${country.name.official}`}
+				aria-label={`More details about ${country.name.common}`}
+			>
 				<div
 					className="flag-img"
 					style={{ backgroundImage: `url(${country.flags.svg})` }}
