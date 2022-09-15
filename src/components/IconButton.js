@@ -7,7 +7,9 @@ const IconButton = ({ onClick, icon, text, className }) => {
 	};
 	return (
 		<button
-			className={`btn icon-button fs-m fw-m ${className ? className : ""}`}
+			className={`btn btn-hover icon-button fs-m fw-m ${
+				className ? className : ""
+			}`}
 			onClick={handleClick}
 		>
 			<FontAwesomeIcon icon={icon} />

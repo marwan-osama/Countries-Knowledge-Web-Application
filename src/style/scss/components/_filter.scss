@@ -1,0 +1,11 @@
+.filter {
+	@include flexCenter;
+	justify-content: space-between;
+	margin: 36px 0;
+
+	@include max-breakpoint(600px) {
+		align-items: start;
+		flex-direction: column;
+		gap: 24px;
+	}
+}

@@ -139,7 +139,7 @@ const CountryDetail = () => {
 										return (
 											<Link
 												to={`/details/${countryNames.official}`}
-												className={`btn reset-anchor fs-m fw-s ${
+												className={`btn btn-hover reset-anchor fs-m fw-s ${
 													lightMode ? "bg-white" : "bg-blue"
 												}`}
 												key={countryNames.common}

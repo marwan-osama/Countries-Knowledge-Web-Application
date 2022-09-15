@@ -1,0 +1,26 @@
+.search-bar {
+	@include flexCenter;
+	justify-content: start;
+	height: 52px;
+	padding: 0 24px;
+	border-radius: 6px;
+	width: min(300px, 100%);
+	gap: 12px;
+	box-shadow: 0 0 6px -3px black;
+
+	input {
+		background-color: inherit;
+		border: none;
+		padding: 12px;
+		font-family: inherit;
+		flex-grow: 1;
+
+		&:focus {
+			outline: 1px solid rgba($color: #000, $alpha: 0.25);
+		}
+	}
+
+	@include max-breakpoint(600px) {
+		width: -webkit-fill-available;
+	}
+}

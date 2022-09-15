@@ -19,7 +19,7 @@ const CountryDetail = () => {
 				lightMode ? "clr-vd-blue" : "clr-white"
 			}`}
 		>
-			There is no Counties matches that Search.
+			There is no Countries matches that Search.
 		</p>
 	);
 };

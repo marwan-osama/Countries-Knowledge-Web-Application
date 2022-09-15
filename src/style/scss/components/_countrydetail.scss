@@ -1,0 +1,87 @@
+.country-details {
+	@include flexCenter;
+	margin-bottom: 32px;
+	gap: 10%;
+
+	@include m-screen {
+		flex-direction: column;
+		align-items: start;
+		gap: 48px;
+
+		.country-flag-wrapper {
+			width: 100%;
+		}
+	}
+
+	.country-flag-wrapper {
+		flex: 1;
+
+		.country-flag {
+			width: 100%;
+			padding-top: 60%;
+			background-position: center;
+			background-size: cover;
+		}
+	}
+
+	.country-info {
+		display: flex;
+		flex-direction: column;
+		gap: 36px;
+		flex: 1;
+
+		@include m-screen {
+			padding: 0 24px;
+		}
+
+		.country-name {
+			margin: 0;
+		}
+
+		.country-data {
+			display: flex;
+			gap: 24px;
+
+			ul {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				gap: 12px;
+			}
+
+			@include s-screen {
+				flex-direction: column;
+				gap: 48px;
+			}
+		}
+
+		.border-countries {
+			.buttons {
+				.btn {
+					min-width: 64px;
+					display: inline-block;
+					text-align: center;
+					margin: 6px 6px;
+					padding: 4px 8px;
+					border-radius: 3px;
+					box-shadow: 0 0 6px -3px black;
+				}
+			}
+		}
+	}
+}
+
+.back-button-wrapper {
+	margin: max(5%, 36px) 0;
+
+	button {
+		border-radius: 4px;
+		padding: 4px;
+		width: 100px;
+		box-shadow: 0 0 6px -3px black;
+	}
+}

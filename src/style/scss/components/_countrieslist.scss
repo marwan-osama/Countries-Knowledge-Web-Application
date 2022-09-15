@@ -1,0 +1,46 @@
+.countries-list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 32px;
+
+	@include min-max-breakpoint(0, 480px) {
+		grid-template-columns: 1fr;
+	}
+	@include min-max-breakpoint(480px, 768px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@include min-max-breakpoint(768px, 1024px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.country-card {
+		box-shadow: 0 0 6px -3px black;
+		border-radius: 6px;
+
+		.flag-img {
+			width: 100%;
+			padding-top: 56.5%;
+			background-size: cover;
+			background-position: center;
+			border-radius: 6px 6px 0 0;
+		}
+
+		.country-info {
+			padding: 0 24px 48px;
+
+			.country-name {
+				padding: 16px 0;
+			}
+
+			& > * > * {
+				margin: 0;
+			}
+
+			.country-more-info {
+				display: flex;
+				flex-direction: column;
+				gap: 6px;
+			}
+		}
+	}
+}

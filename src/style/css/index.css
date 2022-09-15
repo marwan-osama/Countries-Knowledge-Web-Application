@@ -291,48 +291,6 @@ nav {
   margin: auto;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Nunito Sans", sans-serif;
-  margin: 0;
-}
-
-main {
-  width: min(1200px, 90%);
-  margin: auto;
-}
-
-.btn {
-  font-family: inherit;
-  border: none;
-  cursor: pointer;
-}
-
-.icon-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.filter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  margin: 36px 0;
-}
-@media (max-width: 600px) {
-  .filter {
-    align-items: start;
-    flex-direction: column;
-    gap: 24px;
-  }
-}
-
 .search-bar {
   display: flex;
   align-items: center;
@@ -359,6 +317,32 @@ main {
   .search-bar {
     width: -webkit-fill-available;
   }
+}
+
+.loading-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-wrapper .loader {
+  width: 48px;
+  height: 48px;
+  margin: 32px;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: transparent;
+  animation-name: rotate;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.loading-wrapper .loader-light {
+  border-top-color: hsl(209deg, 23%, 22%);
+  border-bottom-color: hsl(209deg, 23%, 22%);
+}
+.loading-wrapper .loader-dark {
+  border-top-color: hsl(0deg, 0%, 98%);
+  border-bottom-color: hsl(0deg, 0%, 98%);
 }
 
 .drop-down {
@@ -445,36 +429,6 @@ main {
   gap: 6px;
 }
 
-.loading-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.loading-wrapper .loader {
-  width: 48px;
-  height: 48px;
-  margin: 32px;
-  border-radius: 50%;
-  border: 8px solid;
-  border-color: transparent;
-  animation-name: rotate;
-  animation-duration: 800ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-.loading-wrapper .loader-light {
-  border-top-color: hsl(209deg, 23%, 22%);
-  border-bottom-color: hsl(209deg, 23%, 22%);
-}
-.loading-wrapper .loader-dark {
-  border-top-color: hsl(0deg, 0%, 98%);
-  border-bottom-color: hsl(0deg, 0%, 98%);
-}
-
-.non-matching-text {
-  margin: 32px;
-}
-
 .country-details {
   display: flex;
   align-items: center;
@@ -535,12 +489,12 @@ main {
     gap: 48px;
   }
 }
-.country-details .country-info .border-countries .buttons > * {
+.country-details .country-info .border-countries .buttons .btn {
   min-width: 64px;
   display: inline-block;
   text-align: center;
   margin: 6px 6px;
-  padding: 4px 6px;
+  padding: 4px 8px;
   border-radius: 3px;
   box-shadow: 0 0 6px -3px black;
 }
@@ -553,6 +507,61 @@ main {
   padding: 4px;
   width: 100px;
   box-shadow: 0 0 6px -3px black;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 36px 0;
+}
+@media (max-width: 600px) {
+  .filter {
+    align-items: start;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.btn {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-hover {
+  transition: 250ms opacity, 250ms transform;
+}
+@media (hover: hover) {
+  .btn-hover:hover {
+    transform: scale(1.1);
+  }
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+}
+
+main {
+  width: min(1200px, 90%);
+  margin: auto;
+}
+
+.non-matching-text {
+  margin: 32px;
 }
 
 /*# sourceMappingURL=index.css.map */
