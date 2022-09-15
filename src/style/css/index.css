@@ -325,8 +325,8 @@ nav {
   justify-content: center;
 }
 .loading-wrapper .loader {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   margin: 32px;
   border-radius: 50%;
   border: 8px solid;
@@ -536,6 +536,9 @@ nav {
 @media (hover: hover) {
   .btn-hover:hover {
     transform: scale(1.1);
+  }
+  .btn-hover:active {
+    transform: scale(1);
   }
 }
 
